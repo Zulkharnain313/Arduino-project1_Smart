@@ -534,11 +534,3 @@ void loop()
   sendCameraPicture(); 
   Serial.printf("SPIRam Total heap %d, SPIRam Free Heap %d\n", ESP.getPsramSize(), ESP.getFreePsram());
 }
- void loop() 
-{
-  wsCamera.cleanupClients(); 
-  wsCarInput.cleanupClients(); 
-  sendCameraPicture(); 
-  Serial.printf("SPIRam Total heap %d, SPIRam Free Heap %d\n", ESP.getPsramSize(), ESP.getFreePsram());
-}
-
